@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #DAF7DC;
   --foreground: #171717;
+  --sections: rgb(69, 1, 117);
+  --sectionsclear: rgba(69, 1, 117, 0.5);
+  --servicesbtncolor: white;
+  --servicesbtnbg: #982649;
 }
 
 @theme inline {
@@ -12,15 +16,21 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.sections {
+  background: var(--sections);
+}
+
+.sectionsclear {
+  background: var(--sectionsclear);
+}
+
+.servicesbtn {
+  color: var(--servicesbtncolor);
+  background: var(--servicesbtnbg);
 }
