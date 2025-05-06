@@ -6,6 +6,8 @@ import Portfolio from "./sections/Portfolio";
 import About from "./sections/About";
 import Values from "./sections/Values";
 import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
+import Topbtn from "./components/Topbtn";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <About />
       <Values />
       <Contact />
+      <Footer />
+      <Topbtn />
     </main>
   );
 }

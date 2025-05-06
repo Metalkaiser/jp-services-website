@@ -5,7 +5,7 @@ import Contactform from "../components/Contactform";
 
 export default function Contact() {
   return (
-    <section id="contact" className="flex flex-col items-center justify-center w-full h-full py-10">
+    <section id="contact" className="flex flex-col items-center justify-center w-full h-full">
       <div className="relative w-full h-full">
         <Image
           src={contactSection.image}

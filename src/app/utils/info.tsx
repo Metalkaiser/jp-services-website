@@ -7,10 +7,17 @@ import P4 from "@/../../public/images/sections/portfolio/p4.webp";
 import about_image from "@/../../public/images/sections/about.webp";
 import ig_image from "@/../../public/images/misc/instagram.png";
 import contact_image from "@/../../public/images/sections/contactus.webp";
+import logo from "@/../../public/images/branding/default-icon.png";
 
 export const websiteName = "JP Dev";  //Nombre de la empresa
 export const websiteNameFull = `${websiteName} - Servicios web`;  //Título del sitio web
 export const websiteDescription = "Desarrollo de aplicaciones web, tiendas en línea y soluciones personalizadas para tu negocio.";  //Descripcion del sitio wen
+const socials = [
+  {
+    icon: ig_image,
+    href: "#"
+  }
+]
 
 /*
 *
@@ -178,12 +185,7 @@ export const aboutSection = {
   title: "Acerca de nosotros",
   description: `En ${websiteName} somos un equipo de desarrolladores apasionados por la tecnología y la innovación. Nos especializamos en crear soluciones digitales personalizadas que ayudan a nuestros clientes a alcanzar sus objetivos comerciales.`,
   image: about_image,
-  socials: [
-    {
-      icon: ig_image,
-      href: "#"
-    }
-  ]
+  socials: socials
 };
 
 /*
@@ -236,4 +238,26 @@ export const contactSection = {
     btnHref: "#",
     btnIcon: WA_Logo
   }
+}
+
+/*
+*
+* title: Título del pie de página
+* description: Breve delcripción de la empresa
+* logo: URL o ruta del logo de la empresa
+* socials: Enlaces e iconos de redes sociales
+*   icon: URL o ruta del icono de la red social
+*   href: Enlace a la red social
+* contactinfo: Información de contacto
+* 
+*/
+export const footerSection = {
+  title: websiteName,
+  description: "Soluciones digitales para tu negocio",
+  logo: logo,
+  socials: socials,
+  contactinfo: [
+    "+58 424 123 4567",
+    "metalkaiserpolanco@gmail.com"
+  ]
 }
