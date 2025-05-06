@@ -254,6 +254,7 @@ export const contactSection = {
   description: "Cuéntanos, ¿qué necesitas?. Estaremos encantados de escucharte y ayudarte con tu proyecto.",
   image: contact_image,
   form: {
+    formBtnText: "",
   },
   waBtn: {
     btnText: "Contáctanos por WhatsApp",
