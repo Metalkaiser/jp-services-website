@@ -6,6 +6,7 @@ import P3 from "@/../../public/images/sections/portfolio/p3.webp";
 import P4 from "@/../../public/images/sections/portfolio/p4.webp";
 import about_image from "@/../../public/images/sections/about.webp";
 import ig_image from "@/../../public/images/misc/instagram.png";
+import contact_image from "@/../../public/images/sections/contactus.webp";
 
 export const websiteName = "JP Dev";  //Nombre de la empresa
 export const websiteNameFull = `${websiteName} - Servicios web`;  //Título del sitio web
@@ -184,3 +185,55 @@ export const aboutSection = {
     }
   ]
 };
+
+/*
+*
+* title: Título de la sección "Valores"
+* items: Enlaces e iconos de redes sociales
+*   icon: URL o ruta del icono del item
+*   text: Texto del item
+* 
+*/
+export const valuesSection = {
+  title: "Somos justo lo que necesitas",
+  items: [
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/9750/9750879.png",
+      text: "Comunicación y honestidad"
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/5680/5680055.png",
+      text: "Adaptados a tus necesidades"
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/2057/2057748.png",
+      text: "Resultados y servicio postventa"
+    }
+  ]
+}
+
+/*
+*
+* title: Título de la sección Contacto
+* description: Breve descripción de la sección Contacto
+* image: URL o ruta de la imagen de fondo
+* form: Propiedades del formulario de contacto
+*   formBtnText: Texto del botón de envío del formulario
+* waBtn: Propiedades del botón de WhatsApp
+*   btnText: texto del botón CTA
+*   btnHref: Enlace del botón CTA
+*   btnIcon: Icono del botón CTA
+* 
+*/
+export const contactSection = {
+  title: "Contáctanos",
+  description: "Cuéntanos, ¿qué necesitas?. Estaremos encantados de escucharte y ayudarte con tu proyecto.",
+  image: contact_image,
+  form: {
+  },
+  waBtn: {
+    btnText: "Contáctanos por WhatsApp",
+    btnHref: "#",
+    btnIcon: WA_Logo
+  }
+}
