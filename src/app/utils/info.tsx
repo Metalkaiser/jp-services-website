@@ -4,6 +4,8 @@ import P1 from "@/../../public/images/sections/portfolio/p1.webp";
 import P2 from "@/../../public/images/sections/portfolio/p2.webp";
 import P3 from "@/../../public/images/sections/portfolio/p3.webp";
 import P4 from "@/../../public/images/sections/portfolio/p4.webp";
+import about_image from "@/../../public/images/sections/about.webp";
+import ig_image from "@/../../public/images/misc/instagram.png";
 
 export const websiteName = "JP Dev";  //Nombre de la empresa
 export const websiteNameFull = `${websiteName} - Servicios web`;  //Título del sitio web
@@ -159,3 +161,26 @@ export const portfolio = [
     image: P4
   },
 ];
+
+
+/*
+*
+* title: Título de la sección "Acerca de nosotros"
+* description: Breve descripción de la empresa
+* image: URL o ruta de la imagen de fondo
+* socials: Enlaces e iconos de redes sociales
+*   icon: URL o ruta del icono de la red social
+*   href: Enlace a la red social
+* 
+*/
+export const aboutSection = {
+  title: "Acerca de nosotros",
+  description: `En ${websiteName} somos un equipo de desarrolladores apasionados por la tecnología y la innovación. Nos especializamos en crear soluciones digitales personalizadas que ayudan a nuestros clientes a alcanzar sus objetivos comerciales.`,
+  image: about_image,
+  socials: [
+    {
+      icon: ig_image,
+      href: "#"
+    }
+  ]
+};
