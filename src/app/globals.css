@@ -7,6 +7,7 @@
   --sectionsclear: rgba(69, 1, 117, 0.5);
   --servicesbtncolor: white;
   --servicesbtnbg: #982649;
+  --wacolor: #25D366;
 }
 
 @theme inline {
@@ -33,4 +34,8 @@ body {
 .servicesbtn {
   color: var(--servicesbtncolor);
   background: var(--servicesbtnbg);
+}
+
+.wabg {
+  background: var(--wacolor);
 }
