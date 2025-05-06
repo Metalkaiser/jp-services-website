@@ -27,15 +27,15 @@ const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
   form.reset();
 }
 
-export default function Contactform(formProps:{formBtnText:string} | undefined) {
-  if (formProps?.formBtnText) {
+export default function Contactform({ formBtnText }: { formBtnText: string }) {
+  if (formBtnText) {
     return (
       <form className="flex flex-col items-center justify-center w-full md:w-1/3 m-5" onSubmit={(e) => sendMessage(e)}>
         <input type="text" placeholder="Nombre" className="p-2 mb-2 border rounded w-full" />
         <input type="email" placeholder="Email" className="p-2 mb-2 border rounded w-full" />
         <textarea placeholder="Mensaje" className="p-2 mb-2 border rounded w-full min-h-[200px]"></textarea>
         <button type="submit" className={`px-4 py-2 mt-5 text-white rounded w-full servicesbtn active:scale-90 transition-transform duration-300`}>
-          {formProps.formBtnText}
+          {formBtnText}
         </button>
       </form>
     ) 

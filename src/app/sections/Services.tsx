@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { servicesSection } from "../utils/info";
 import { services } from "../utils/info";
 
@@ -11,7 +12,7 @@ export default function Services() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-5/6 md:w-3/5 mt-10">
         {services.map((service, index) => (
           <div key={index} className="flex flex-col items-center p-4 rounded-lg shadow-md">
-            <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4" />
+            <Image src={service.icon} alt={service.title} width={64} height={64} className="size-16 mb-4" ></Image>
             <h2 className="text-xl font-semibold text-center">{service.title}</h2>
             <p className="text-center">{service.description}</p>
           </div>
