@@ -1,3 +1,18 @@
+/*
+*
+* info.tsx
+* Este archivo contiene toda la información y elementos gráficos utilizados en el sitio web.
+* No se recomienda modificar las propiedades de las variables
+* solamente se recomienda modificar los valores de las propiedades.
+* 
+*/
+
+
+/*
+*
+* Importaciones de las imágenes y logos utilizados en el sitio web
+* 
+*/
 import WA_Logo from "@/../../public/images/misc/whatsapp.png";
 import cta_image from "@/../../public/images/sections/cta.webp";
 import P1 from "@/../../public/images/sections/portfolio/p1.webp";
@@ -12,6 +27,15 @@ import logo from "@/../../public/images/branding/default-icon.png";
 export const websiteName = "JP Dev";  //Nombre de la empresa
 export const websiteNameFull = `${websiteName} - Servicios web`;  //Título del sitio web
 export const websiteDescription = "Desarrollo de aplicaciones web, tiendas en línea y soluciones personalizadas para tu negocio.";  //Descripcion del sitio wen
+
+
+/*
+*
+* Redes sociales de la empresa
+* icon: URL o ruta del icono de la red social
+* href: Enlace a la red social
+* 
+*/
 const socials = [
   {
     icon: ig_image,
@@ -177,8 +201,6 @@ export const portfolio = [
 * description: Breve descripción de la empresa
 * image: URL o ruta de la imagen de fondo
 * socials: Enlaces e iconos de redes sociales
-*   icon: URL o ruta del icono de la red social
-*   href: Enlace a la red social
 * 
 */
 export const aboutSection = {
@@ -246,8 +268,6 @@ export const contactSection = {
 * description: Breve delcripción de la empresa
 * logo: URL o ruta del logo de la empresa
 * socials: Enlaces e iconos de redes sociales
-*   icon: URL o ruta del icono de la red social
-*   href: Enlace a la red social
 * contactinfo: Información de contacto
 * 
 */
