@@ -1,5 +1,6 @@
 import { ctaSection } from "../utils/info";
 import Image from "next/image";
+import Link from "next/link";
 
 const flexStyle = "flex flex-col items-center";
 
@@ -17,7 +18,7 @@ export default function Cta() {
           <div className={`${flexStyle} gap-1 text-center`}>
             <h2 className="text-3xl font-bold mb-4">{ctaSection.title}</h2>
             <p className="text-lg mb-6">{ctaSection.hookText}</p>
-            <a
+            <Link
               href={ctaSection.btnHref}
               className="wabg text-white px-6 py-3 rounded-lg flex items-center justify-center"
             >
@@ -29,7 +30,7 @@ export default function Cta() {
                 height={24}
                 className="ml-2"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
