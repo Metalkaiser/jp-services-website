@@ -1,17 +1,23 @@
-import { aboutSection } from "../utils/info";
-import Logo from "@/../public/images/branding/default-icon.png";
 import Image from "next/image";
 import Link from "next/link";
+import { aboutSectionAssets } from "../utils/info";
+import Logo from "@/../public/images/branding/default-icon.png";
+import { socials } from "../utils/info";
 
 const textStyle = "text-center md:text-left";
 const flexStyle = "flex flex-col items-center";
 
-export default function About() {
+type aboutSection = {
+  title: string;
+  description: string;
+};
+
+export default function About({aboutSection}: {aboutSection: aboutSection}) {
   return (
     <section>
       <div className="relative">
         <Image
-          src={aboutSection.image}
+          src={aboutSectionAssets}
           alt="Imagen de fondo"
           className="w-full h-screen object-cover"
           loading="lazy"
@@ -23,7 +29,7 @@ export default function About() {
               {aboutSection.description}
             </h1>
             <div className="flex gap-4 w-full justify-center">
-              {aboutSection.socials.map((social, index) => (
+              {socials.map((social, index) => (
                 <Link
                   key={index}
                   href={social.href}

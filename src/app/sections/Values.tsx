@@ -1,7 +1,14 @@
 import Image from "next/image";
-import { valuesSection } from "../utils/info";
 
-export default function Values() {
+type valuesSection = {
+  title: string;
+  items: {
+    icon: string;
+    text: string;
+  }[];
+};
+
+export default function Values({valuesSection}: {valuesSection: valuesSection}) {
   return (
     <section>
       <div className="flex flex-col items-center justify-center w-full h-full py-10">

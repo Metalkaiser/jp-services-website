@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { websiteNameFull, websiteDescription } from "./utils/info";
+import { websiteInfoEsp } from "./utils/info-esp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,31 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: websiteNameFull,
-  description: websiteDescription,
+  title: websiteInfoEsp.websiteProps.websiteNameFull,
+  description: websiteInfoEsp.websiteProps.websiteDescription,
   authors: [
     {
       name: "JP Dev",
-      url: "",
+      url: "https://jp-services-orcin.vercel.app/",
     },
   ],
   creator: "JP Dev",
-  keywords: [
-    "desarrollo web",
-    "tiendas en línea",
-    "soluciones personalizadas",
-    "aplicaciones web",
-    "desarrollo de software",
-    "optimización de procesos",
-    "mejora de procesos",
-    "gestión de inventario",
-    "interacción con clientes",
-    "impulso de ventas",
-    "presencia en línea",
-    "estrategias digitales",
-    "transformación digital",
-    "marketing digital",
-  ],
+  keywords: websiteInfoEsp.websiteProps.websiteKeywords
 
 };
 

@@ -1,14 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
-import { contactSection } from "../utils/info";
+import { contactSectionAssets } from "../utils/info";
 import Contactform from "../components/Contactform";
 
-export default function Contact() {
+type contactSection = {
+  title: string;
+  description: string;
+  form: {
+    formBtnText: string;
+  };
+  waBtn: {
+    btnText: string;
+  };
+};
+
+export default function Contact({contactSection}: { contactSection: contactSection}) {
   return (
     <section id="contact" className="flex flex-col items-center justify-center w-full h-full">
       <div className="relative w-full h-full">
         <Image
-          src={contactSection.image}
+          src={contactSectionAssets.image}
           alt="Contact"
           layout="fill"
           objectFit="cover"
@@ -19,12 +30,12 @@ export default function Contact() {
           <p className="text-lg text-center">{contactSection.description}</p>
           <Contactform formBtnText={contactSection.form.formBtnText} />
           <Link
-            href={contactSection.waBtn.btnHref}
+            href={contactSectionAssets.waBtn.btnHref}
             className="wabg text-white px-6 py-3 rounded-lg flex items-center justify-center"
           >
             {contactSection.waBtn.btnText}
             <Image
-              src={contactSection.waBtn.btnIcon}
+              src={contactSectionAssets.waBtn.btnIcon}
               alt="WhatsApp Logo"
               width={24}
               height={24}

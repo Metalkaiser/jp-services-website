@@ -1,12 +1,17 @@
 import Image from "next/image";
 import Topimage from "@/../public/images/sections/top.webp";
 import Servicesbtn from "../components/Servicesbtn";
-import { titleContent } from "../utils/info";
 
 const textStyle = "text-center md:text-left";
 const flexStyle = "flex flex-col items-center";
+type titleContent =  {
+  mainText: string;
+  itemsList: string[];
+  subText: string;
+  hookText: string;
+}
 
-export default function Title() {
+export default function Title( {titleContent, topCta}: {titleContent: titleContent, topCta: string}) {
   return (
     <section>
       <div className="relative">
@@ -32,7 +37,7 @@ export default function Title() {
             <h1 className={`text-2xl ${textStyle}`}>
               {titleContent.hookText}
             </h1>
-            <Servicesbtn />
+            <Servicesbtn topCta={topCta} />
           </div>
         </div>
       </div>
