@@ -1,8 +1,16 @@
 import Image from "next/image";
-import { servicesSection } from "../utils/info";
-import { services } from "../utils/info";
 
-export default function Services() {
+type servicesSection = {
+  title: string;
+  description: string;
+};
+type services = {
+  title: string;
+  description: string;
+  icon: string;
+}[];
+
+export default function Services({servicesSection, services}: {servicesSection: servicesSection, services: services}) {
   return (
     <section id="services" className="flex flex-col items-center w-screen min-h-screen my-10">
       <div className="flex flex-col items-center text-center gap-3 w-5/6 md:w-3/5">
