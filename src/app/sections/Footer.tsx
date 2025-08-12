@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/../public/images/branding/default-icon.png";
+import Logo from "@/../public/images/branding/default-icon-mono.png";
 import { socials, contactinfo } from "../utils/info";
 
 type footerSection = {

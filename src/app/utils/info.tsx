@@ -12,7 +12,7 @@ import { images } from "./Images";  //Importaciones de las imágenes y logos uti
 
 export const websiteName = "JP Dev";  //Nombre de la empresa
 export const contactinfo = [
-  "+58 424 123 4567",
+  "+58 412 433 5244",
   "metalkaiserpolanco@gmail.com"
 ]
 
@@ -24,10 +24,10 @@ export const contactinfo = [
 * 
 */
 export const socials = [
-  {
+  /*{
     icon: images.instagram,
     href: "#"
-  }
+  }*/
 ];
 
 /*
@@ -75,6 +75,6 @@ export const contactSectionAssets = {
   image: images.contact,
   waBtn: {
     btnIcon: images.whatsapp,
-    btnHref: "#"
+    btnHref: "send?phone=584124335244&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
   }
 }

@@ -30,8 +30,9 @@ export default function Contact({contactSection}: { contactSection: contactSecti
           <p className="text-lg text-center">{contactSection.description}</p>
           <Contactform formBtnText={contactSection.form.formBtnText} />
           <Link
-            href={contactSectionAssets.waBtn.btnHref}
+            href={`https://api.whatsapp.com/${contactSectionAssets.waBtn.btnHref}`}
             className="wabg text-white px-6 py-3 rounded-lg flex items-center justify-center"
+            target="_blank"
           >
             {contactSection.waBtn.btnText}
             <Image
