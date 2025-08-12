@@ -12,6 +12,11 @@ type aboutSection = {
   description: string;
 };
 
+type social = {
+  icon: string;
+  href: string;
+};
+
 export default function About({aboutSection}: {aboutSection: aboutSection}) {
   return (
     <section>
@@ -28,8 +33,8 @@ export default function About({aboutSection}: {aboutSection: aboutSection}) {
             <h1 className={`text-2xl ${textStyle}`}>
               {aboutSection.description}
             </h1>
-            <div className="flex gap-4 w-full justify-center">
-              {socials.map((social, index) => (
+            {socials.length ? (<div className="flex gap-4 w-full justify-center">
+              {socials.map((social:social, index) => (
                 <Link
                   key={index}
                   href={social.href}
@@ -41,7 +46,7 @@ export default function About({aboutSection}: {aboutSection: aboutSection}) {
                     ></Image>
                 </Link>
               ))}
-            </div>
+            </div>) : ""}
           </div>
           <Image src={Logo} alt="JP Dev" className="w-1/2 md:w-1/4 order-1 md:order-2"></Image>
         </div>
