@@ -13,17 +13,34 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const websiteData = websiteInfoEsp.websiteProps;
+
 export const metadata: Metadata = {
-  title: websiteInfoEsp.websiteProps.websiteNameFull,
-  description: websiteInfoEsp.websiteProps.websiteDescription,
+  title: websiteData.websiteNameFull,
+  description: websiteData.websiteDescription,
   authors: [
     {
       name: "JP Dev",
-      url: "https://jp-services-orcin.vercel.app/",
+      url: websiteData.websiteUrl,
     },
   ],
   creator: "JP Dev",
-  keywords: websiteInfoEsp.websiteProps.websiteKeywords
+  keywords: websiteData.websiteKeywords,
+  openGraph: {
+    title: websiteData.websiteNameFull,
+    description: websiteData.websiteDescription,
+    url: websiteData.websiteUrl,
+    siteName: websiteData.websiteNameFull,
+    images: [
+      {
+        url: "/images/branding/banner_FB.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
 
 };
 

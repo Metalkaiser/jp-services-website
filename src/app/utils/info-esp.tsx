@@ -5,6 +5,7 @@ export const websiteInfoEsp = {
   websiteProps: {
     websiteNameFull: `${websiteName} - Servicios web`,
     websiteDescription: "Desarrollo de aplicaciones web, tiendas en línea y soluciones personalizadas para tu negocio.",
+    websiteUrl: "https://jpdev.online",
     websiteKeywords: [
       "desarrollo web",
       "tiendas en línea",

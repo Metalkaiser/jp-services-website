@@ -12,8 +12,8 @@ import { images } from "./Images";  //Importaciones de las imágenes y logos uti
 
 export const websiteName = "JP Dev";  //Nombre de la empresa
 export const contactinfo = [
-  "+58 412 433 5244",
-  "metalkaiserpolanco@gmail.com"
+  "+58 424 373 4834",
+  "contacto@jpdev.online"
 ]
 
 /*
@@ -75,6 +75,6 @@ export const contactSectionAssets = {
   image: images.contact,
   waBtn: {
     btnIcon: images.whatsapp,
-    btnHref: "send?phone=584124335244&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
+    btnHref: "send?phone=584243734834&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
   }
 }
