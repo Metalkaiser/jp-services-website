@@ -8,6 +8,12 @@ type contactSection = {
   description: string;
   form: {
     formBtnText: string;
+    formBtnTextSending: string;
+    name: string;
+    email: string;
+    message: string;
+    sent: string;
+    error: string;
   };
   waBtn: {
     btnText: string;
@@ -28,7 +34,7 @@ export default function Contact({contactSection}: { contactSection: contactSecti
         <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-5 text-white sectionsclear gap-5">
           <h2 className="text-3xl font-bold text-center">{contactSection.title}</h2>
           <p className="text-lg text-center">{contactSection.description}</p>
-          <Contactform formBtnText={contactSection.form.formBtnText} />
+          <Contactform formtext={contactSection.form} />
           <Link
             href={`https://api.whatsapp.com/${contactSectionAssets.waBtn.btnHref}`}
             className="wabg text-white px-6 py-3 rounded-lg flex items-center justify-center"

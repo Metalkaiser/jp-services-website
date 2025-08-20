@@ -25,16 +25,9 @@ export default function Cta({ctaSection}: {ctaSection: ctaSection}) {
             <p className="text-lg mb-6">{ctaSection.hookText}</p>
             <Link
               href="#contact"
-              className="wabg text-white px-6 py-3 rounded-lg flex items-center justify-center"
+              className="servicesbtn text-white px-6 py-3 rounded-lg flex items-center justify-center"
             >
               {ctaSection.btnText}
-              <Image
-                src={ctaSectionAssets.btnIcon}
-                alt="WhatsApp Logo"
-                width={24}
-                height={24}
-                className="ml-2"
-              />
             </Link>
           </div>
         </div>

@@ -69,6 +69,12 @@ type Info = {
     description: string;
     form: {
       formBtnText: string;
+      formBtnTextSending: string;
+      name: string;
+      email: string;
+      message: string;
+      sent: string;
+      error: string;
     };
     waBtn: {
       btnText: string;

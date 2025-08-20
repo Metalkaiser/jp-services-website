@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Topimage from "@/../public/images/sections/top.webp";
+import Topimage from "@P/images/sections/top.webp";
 import Servicesbtn from "../components/Servicesbtn";
 
 const textStyle = "text-center md:text-left";

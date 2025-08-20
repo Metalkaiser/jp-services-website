@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import arrow from "@/../../public/images/misc/top-arrow.png";
+import arrow from "@P/images/misc/top-arrow.png";
 
 
 export default function Topbtn() {
