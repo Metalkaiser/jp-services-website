@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { websiteName } from "../utils/info";
-import Logo from "@/../public/images/branding/default-icon.png";
+import Logo from "@P/images/branding/default-icon.png";
 
 export default function Loading() {
   return (

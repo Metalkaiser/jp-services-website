@@ -24,10 +24,14 @@ export const contactinfo = [
 * 
 */
 export const socials = [
-  /*{
+  {
     icon: images.instagram,
-    href: "#"
-  }*/
+    href: "https://www.instagram.com/jpdev.online"
+  },
+  {
+    icon: images.facebook,
+    href: "https://www.facebook.com/jpdev.online"
+  }
 ];
 
 /*

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "@/../public/images/branding/default-icon.png";
+import Logo from "@P/images/branding/default-icon.png";
 
 export default function Topheader ( {websiteNameFull}: {websiteNameFull: string} ) {
   return (

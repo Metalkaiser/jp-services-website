@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/../public/images/branding/default-icon-mono.png";
+import Logo from "@P/images/branding/default-icon-mono.png";
 import { socials, contactinfo } from "../utils/info";
 
 type footerSection = {
@@ -9,8 +9,10 @@ type footerSection = {
   rights: string;
 }
 
+import type { StaticImageData } from "next/image";
+
 type social = {
-  icon: string;
+  icon: StaticImageData;
   href: string;
 };
 
@@ -33,7 +35,7 @@ export default function Footer({footerSection}: {footerSection: footerSection}) 
           </div>
           {socials.length ? (<div className="flex space-x-4 mb-6 md:mb-0">
             {socials.map((social:social, index) => (
-              <Link key={index} href={social.href}>
+              <Link key={index} href={social.href} target="_blank">
                 <Image
                   src={social.icon}
                   alt="Social Icon"

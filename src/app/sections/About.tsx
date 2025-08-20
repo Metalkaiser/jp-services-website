@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { aboutSectionAssets } from "../utils/info";
-import Logo from "@/../public/images/branding/default-icon.png";
+import Logo from "@P/images/branding/default-icon.png";
 import { socials } from "../utils/info";
 
 const textStyle = "text-center md:text-left";
@@ -13,7 +13,7 @@ type aboutSection = {
 };
 
 type social = {
-  icon: string;
+  icon: StaticImageData;
   href: string;
 };
 

@@ -2,12 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { contactSectionAssets } from "../utils/info";
 import Contactform from "../components/Contactform";
+import { fbq } from "../utils/fbq";
 
 type contactSection = {
   title: string;
   description: string;
   form: {
     formBtnText: string;
+    formBtnTextSending: string;
+    name: string;
+    email: string;
+    message: string;
+    sent: string;
+    error: string;
   };
   waBtn: {
     btnText: string;
@@ -15,6 +22,11 @@ type contactSection = {
 };
 
 export default function Contact({contactSection}: { contactSection: contactSection}) {
+
+  const waClicked = () => {
+    console.log("WhatsApp button clicked");
+    fbq("track", "Contact");
+  };
   return (
     <section id="contact" className="flex flex-col items-center justify-center w-full h-full">
       <div className="relative w-full h-full">
@@ -28,11 +40,12 @@ export default function Contact({contactSection}: { contactSection: contactSecti
         <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-5 text-white sectionsclear gap-5">
           <h2 className="text-3xl font-bold text-center">{contactSection.title}</h2>
           <p className="text-lg text-center">{contactSection.description}</p>
-          <Contactform formBtnText={contactSection.form.formBtnText} />
+          <Contactform formtext={contactSection.form} />
           <Link
             href={`https://api.whatsapp.com/${contactSectionAssets.waBtn.btnHref}`}
             className="wabg text-white px-6 py-3 rounded-lg flex items-center justify-center"
             target="_blank"
+            onClick={waClicked}
           >
             {contactSection.waBtn.btnText}
             <Image

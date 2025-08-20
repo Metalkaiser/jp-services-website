@@ -122,7 +122,13 @@ export const websiteInfoDe = {
     title: "Kontaktieren Sie uns",
     description: "Sagen Sie uns, was Sie brauchen. Wir würden uns freuen, von Ihnen zu hören und Ihnen bei Ihrem Projekt zu helfen.",
     form: {
-      formBtnText: "",
+      formBtnText: "Nachricht senden",
+      formBtnTextSending: "Sende...",
+      name: "Name",
+      email: "E-Mail",
+      message: "Nachricht",
+      sent: "Nachricht erfolgreich gesendet ✅",
+      error: "Fehler beim Senden der Nachricht ❌"
     },
     waBtn: {
       btnText: "Kontaktieren Sie uns auf WhatsApp",
