@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
+import { fbq } from "../utils/fbq";
 
 type formText = {
   formBtnText: string;
@@ -38,6 +39,7 @@ export default function Contactform({ formtext }: { formtext: formText }) {
       const data = await res.json();
       if (data.success) {
         setStatus(formtext.sent);
+        fbq("track", "Lead");
         setForm({ name: "", email: "", message: "" });
       } else {
         setStatus(formtext.error);
