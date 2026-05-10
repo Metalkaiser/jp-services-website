@@ -1,37 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# jp-services-website
 
-## Getting Started
+Landing site built with Next.js App Router, TypeScript, Tailwind CSS v4, and React 19.
 
-First, run the development server:
+## Requirements
+
+- Node.js 20.19 or newer
+- npm 10 or newer
+
+## Scripts
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The contact form server action and Meta Pixel integration require these variables:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+SMTP_HOST=
+SMTP_PORT=
+SMTP_SECURE=
+SMTP_USER=
+SMTP_PASS=
+NEXT_PUBLIC_PIXEL_ID=
+```
 
-## Learn More
+Notes:
 
-To learn more about Next.js, take a look at the following resources:
+- `SMTP_SECURE` should be `true` or `false`
+- `NEXT_PUBLIC_PIXEL_ID` is exposed to the browser, so it must use the `NEXT_PUBLIC_` prefix
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Install dependencies with `npm install`
+2. Configure the environment variables
+3. Start the dev server with `npm run dev`
+4. Open `http://localhost:3000`
 
-## Deploy on Vercel
+## Build validation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For a production validation run:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# jp-services-website
+```bash
+npm run lint
+npm run build
+```
+
+## Migration notes
+
+- The project targets Next.js 16
+- Linting runs through `eslint .` because `next lint` is no longer available in Next.js 16
+- `next.config.ts` keeps the current `images.remotePatterns` setup for Flaticon-hosted remote icons

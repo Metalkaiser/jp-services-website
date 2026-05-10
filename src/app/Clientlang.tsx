@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react";
+import { useSyncExternalStore } from "react";
 
 import Topheader from "./sections/Topheader";
 import Title from "./sections/Title";
@@ -88,8 +88,9 @@ type Info = {
 }
 
 export default function Clientlang () {
+  const subscribe = () => () => {};
 
-  const language = () => {
+  const language = (): Info => {
     const lang = window.navigator.language;
     const langCode = lang.split("-")[0];
     switch (langCode) {
@@ -102,11 +103,11 @@ export default function Clientlang () {
     }
   }
 
-  const [info, setInfo] = useState<Info | null>(null);
-
-  useEffect(() => {
-    setInfo(language());
-  }, []);
+  const info = useSyncExternalStore(
+    subscribe,
+    language,
+    () => null
+  );
 
   if (!info) {
     return <Loading />

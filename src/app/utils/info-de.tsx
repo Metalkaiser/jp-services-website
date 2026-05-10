@@ -36,7 +36,7 @@ export const websiteInfoDe = {
   topCtaBtnText: "Hier klicken",
   servicesSection: {
     title: "Entdecken Sie unsere Dienstleistungen",
-    description: `Bei ${websiteName} bieten wir eine breite Palette von Dienstleistungen an, um Ihr Unternehmen im digitalen Zeitalter wachsen und gedeihen zu lassen. Von der Entwicklung maßgeschneiderter Webanwendungen bis hin zur Erstellung von Online-Shops haben wir die perfekte Lösung für Sie.`,
+    description: `Bei ${websiteName} bieten wir Ihnen ein umfassendes Leistungsspektrum – und zwar die besten. Wir helfen Ihrem Unternehmen, wie nie zuvor zu wachsen und in der digitalen Welt erfolgreich zu sein. Von der Entwicklung individueller Webanwendungen, exakt nach Ihren Vorgaben, bis hin zur Erstellung fantastischer Online-Shops – der besten, die Sie je gesehen haben – wir haben die perfekte Lösung für Sie. Niemand macht es besser. Bei ${websiteName} bieten wir Ihnen alles aus einer Hand – und das besser als alle anderen!`,
   },
   services: [
     {
