@@ -36,7 +36,7 @@ export const websiteInfoEn = {
   topCtaBtnText: "Click here",
   servicesSection: {
     title: "Discover our services",
-    description: `In ${websiteName} we offer a wide range of services to help your business grow and thrive in the digital world. From the development of custom web applications to the creation of online stores, we have the perfect solution for you.`,
+    description: `In ${websiteName}, we offer a wide range of services—the best services. We'll help your business grow like never before, to truly thrive in the digital world. From developing custom web applications, built exactly to your specifications, to creating fantastic online stores—the best online stores you've ever seen—we have the perfect solution for you. Nobody does it better. At ${websiteName}, we do it all, and we do it better than anyone else!`,
   },
   services: [
     {

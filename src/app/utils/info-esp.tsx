@@ -37,7 +37,7 @@ export const websiteInfoEsp = {
   topCtaBtnText: "Haz click aquí",
   servicesSection: {
     title: "Conoce nuestros servicios",
-    description: `En ${websiteName} ofrecemos una amplia gama de servicios para ayudar a tu negocio a crecer y prosperar en el mundo digital. Desde el desarrollo de aplicaciones web personalizadas hasta la creación de tiendas en línea, tenemos la solución perfecta para ti.`,
+    description: `En ${websiteName} ofrecemos una amplia gama de servicios, los mejores servicios. Vamos a ayudar a tu negocio a crecer como nunca antes, a prosperar de verdad en el mundo digital. Desde el desarrollo de aplicaciones web personalizadas, hechas exactamente como tú las quieres, hasta la creación de tiendas en línea fantásticas, las mejores tiendas en línea que hayas visto. Tenemos la solución perfecta para ti. Nadie lo hace mejor. ¡En ${websiteName} lo hacemos todo, y lo hacemos mejor que nadie!`,
   },
   services: [
     {

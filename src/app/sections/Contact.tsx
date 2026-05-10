@@ -21,10 +21,11 @@ type contactSection = {
   };
 };
 
+const waPhone = process.env.NEXT_PUBLIC_PHONE_NUMBER_WA || ""
+
 export default function Contact({contactSection}: { contactSection: contactSection}) {
 
   const waClicked = () => {
-    console.log("WhatsApp button clicked");
     fbq("track", "Contact");
   };
   return (
@@ -42,7 +43,7 @@ export default function Contact({contactSection}: { contactSection: contactSecti
           <p className="text-lg text-center">{contactSection.description}</p>
           <Contactform formtext={contactSection.form} />
           <Link
-            href={`https://api.whatsapp.com/${contactSectionAssets.waBtn.btnHref}`}
+            href={`https://api.whatsapp.com/send?phone=${waPhone}&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.`}
             className="wabg text-white px-6 py-3 rounded-lg flex items-center justify-center"
             target="_blank"
             onClick={waClicked}

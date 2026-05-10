@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@P/images/branding/default-icon-mono.png";
-import { socials, contactinfo } from "../utils/info";
+import { socials } from "../utils/info";
 
 type footerSection = {
   title: string;
@@ -15,6 +15,11 @@ type social = {
   icon: StaticImageData;
   href: string;
 };
+
+const contactinfo = [
+  process.env.NEXT_PUBLIC_PHONE_NUMBER_TEXT || "",
+  process.env.SMTP_USER || ""
+];
 
 export default function Footer({footerSection}: {footerSection: footerSection}) {
   return (
